@@ -1,0 +1,1 @@
+const SHOW_WHEATHER = 'SHOW_WHEATHER'; 
