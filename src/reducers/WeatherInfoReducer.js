@@ -1,5 +1,3 @@
-import { SHOW_WEATHER } from '../actions';
-
 const INITIAL_STATE = {
 	currentWeather: {
       'code': '26',
@@ -13,9 +11,8 @@ const INITIAL_STATE = {
 
 
 export default (state = INITIAL_STATE, action) => {
+	console.log('state size: ' + (JSON.stringify(state).length/1024) + 'KB');
 	switch(action.type) {
-		case SHOW_WEATHER:
-			return { ...state, show: true };
 		default:
 			return state;	
 	}
